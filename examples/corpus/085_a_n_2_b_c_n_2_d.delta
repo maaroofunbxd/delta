@@ -1,0 +1,12 @@
+# (a n^2 + b) / (c n^2 + d)
+# bounded by |cb-ad|/(c^2 n^2)
+
+sequence a(n) = (1 * n * n + (5)) / (5 * n * n + (2))
+claim a(n) -> 1 / 5
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(23 / (25 * eps))
+            for every n, where n > N
+                abs(a(n) - 1 / 5) < eps
+end

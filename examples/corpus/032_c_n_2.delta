@@ -1,0 +1,12 @@
+# c / n^2
+# n > |c|/eps gives n^2 > |c|/eps as well
+
+sequence a(n) = 50 / (n * n)
+claim a(n) -> 0
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(50 / eps)
+            for every n, where n > N
+                abs(a(n) - 0) < eps
+end

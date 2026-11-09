@@ -1,0 +1,12 @@
+# mixed
+# |... - 1| = 2/(n+1) < 2/n
+
+sequence a(n) = (n - 1) / (n + 1)
+claim a(n) -> 1
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(2 / eps)
+            for every n, where n > N
+                abs(a(n) - 1) < eps
+end

@@ -1,0 +1,13 @@
+# N is chosen using n.  That is not a hard problem to fix -- it is
+# impossible, and the indentation shows why: there is no n to the left,
+# only below, and the line below opens a narrower scope.
+
+sequence a(n) = 1 / n
+claim a(n) -> 0
+
+proof:
+    for every eps, where eps > 0
+        there is N = floor(n / 2)
+            for every n, where n > N
+                abs(a(n) - 0) < eps
+end

@@ -1,0 +1,12 @@
+# n / (n + k)
+# |n/(n+k) - 1| = k/(n+k) < k/n
+
+sequence a(n) = n / (n + 5)
+claim a(n) -> 1
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(5 / eps)
+            for every n, where n > N
+                abs(a(n) - 1) < eps
+end

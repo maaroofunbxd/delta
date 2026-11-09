@@ -1,0 +1,12 @@
+# mixed
+# |... - 1/2| = 5/(2n)
+
+sequence a(n) = (n + 5) / (2 * n)
+claim a(n) -> 1 / 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(5 / (2 * eps))
+            for every n, where n > N
+                abs(a(n) - 1 / 2) < eps
+end

@@ -1,0 +1,12 @@
+# mixed
+# |... - 1/2| = 1/(4n + 6) < 1/(4n)
+
+sequence a(n) = (n + 1) / (2 * n + 3)
+claim a(n) -> 1 / 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(1 / (4 * eps))
+            for every n, where n > N
+                abs(a(n) - 1 / 2) < eps
+end

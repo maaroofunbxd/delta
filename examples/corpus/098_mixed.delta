@@ -1,0 +1,12 @@
+# mixed
+# |... - 2| = 1/(2(2n+1)) < 1/(4n)
+
+sequence a(n) = (4 * n + 1) / (2 * n + 1)
+claim a(n) -> 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(1 / (2 * eps))
+            for every n, where n > N
+                abs(a(n) - 2) < eps
+end

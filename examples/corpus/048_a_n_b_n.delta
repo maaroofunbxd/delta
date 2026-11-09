@@ -1,0 +1,12 @@
+# (a n + b) / n
+# |(an+b)/n - a| = |b|/n
+
+sequence a(n) = (6 * n + (2)) / n
+claim a(n) -> 6
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(2 / eps)
+            for every n, where n > N
+                abs(a(n) - 6) < eps
+end

@@ -1,0 +1,12 @@
+# mixed
+# |... - 3| = |n - 3|/(n^2 + 1), and that is under 1/n
+
+sequence a(n) = (3 * n * n + n) / (n * n + 1)
+claim a(n) -> 3
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(1 / eps)
+            for every n, where n > N
+                abs(a(n) - 3) < eps
+end

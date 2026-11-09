@@ -1,0 +1,12 @@
+# The original flat form.  Both notations parse to the same proof object,
+# so this checks out exactly as the indented version does.
+
+sequence a(n) = 1 / n
+claim a(n) -> 0
+
+proof:
+    given eps with eps > 0
+    choose N = ceil(1 / eps)
+    take n with n > N
+    conclude abs(a(n) - 0) < eps
+end

@@ -1,0 +1,12 @@
+# (a n + b) / n
+# |(an+b)/n - a| = |b|/n
+
+sequence a(n) = (5 * n + (-3)) / n
+claim a(n) -> 5
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(3 / eps)
+            for every n, where n > N
+                abs(a(n) - 5) < eps
+end

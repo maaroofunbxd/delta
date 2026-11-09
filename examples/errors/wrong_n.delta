@@ -1,0 +1,11 @@
+# Passes the shape and scope checks, then gets caught by exact arithmetic.
+
+sequence a(n) = 1 / n
+claim a(n) -> 0
+
+proof:
+    for every eps, where eps > 0
+        there is N = 0
+            for every n, where n > N
+                abs(a(n) - 0) < eps
+end

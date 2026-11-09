@@ -1,0 +1,12 @@
+# (a n + b) / (c n + d)
+# |... - a/c| = |cb - ad| / |c(cn+d)|, bounded by |cb-ad|/(c^2 n)
+
+sequence a(n) = (4 * n + (-3)) / (2 * n + (1))
+claim a(n) -> 4 / 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(10 / (4 * eps))
+            for every n, where n > N
+                abs(a(n) - 4 / 2) < eps
+end

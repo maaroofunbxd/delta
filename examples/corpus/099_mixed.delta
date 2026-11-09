@@ -1,0 +1,12 @@
+# mixed
+# |... - 1/2| = 5/(2(2n^2+1)) < 5/(4n^2)
+
+sequence a(n) = (n * n + 3) / (2 * n * n + 1)
+claim a(n) -> 1 / 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(5 / (4 * eps))
+            for every n, where n > N
+                abs(a(n) - 1 / 2) < eps
+end

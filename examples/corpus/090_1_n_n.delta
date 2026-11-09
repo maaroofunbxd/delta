@@ -1,0 +1,12 @@
+# (+-1)^n / n
+# the sign does not matter; |a(n)| = 1/n
+
+sequence a(n) = (2 * (n - 2 * floor(n / 2)) - 1) / n
+claim a(n) -> 0
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(1 / eps)
+            for every n, where n > N
+                abs(a(n) - 0) < eps
+end

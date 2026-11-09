@@ -1,0 +1,12 @@
+# (a n + b) / (c n + d)
+# |... - a/c| = |cb - ad| / |c(cn+d)|, bounded by |cb-ad|/(c^2 n)
+
+sequence a(n) = (2 * n + (-1)) / (5 * n + (1))
+claim a(n) -> 2 / 5
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(7 / (25 * eps))
+            for every n, where n > N
+                abs(a(n) - 2 / 5) < eps
+end

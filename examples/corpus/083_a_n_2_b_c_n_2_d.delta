@@ -1,0 +1,12 @@
+# (a n^2 + b) / (c n^2 + d)
+# bounded by |cb-ad|/(c^2 n^2)
+
+sequence a(n) = (4 * n * n + (3)) / (1 * n * n + (8))
+claim a(n) -> 4 / 1
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(29 / (1 * eps))
+            for every n, where n > N
+                abs(a(n) - 4 / 1) < eps
+end

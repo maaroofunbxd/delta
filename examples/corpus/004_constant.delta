@@ -1,0 +1,12 @@
+# constant
+# a constant sequence is already at its limit
+
+sequence a(n) = 5
+claim a(n) -> 5
+
+proof:
+    for every eps, where eps > 0
+        there is N = 0
+            for every n, where n > N
+                abs(a(n) - 5) < eps
+end

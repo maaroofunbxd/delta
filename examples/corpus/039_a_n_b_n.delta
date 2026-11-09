@@ -1,0 +1,12 @@
+# (a n + b) / n
+# |(an+b)/n - a| = |b|/n
+
+sequence a(n) = (2 * n + (1)) / n
+claim a(n) -> 2
+
+proof:
+    for every eps, where eps > 0
+        there is N = ceil(1 / eps)
+            for every n, where n > N
+                abs(a(n) - 2) < eps
+end
